@@ -1,0 +1,77 @@
+body {
+    background-color: lighten(blue, 40%);
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    // HACK: prevents white space on bottom
+    min-height:800px;
+}
+
+body {
+    background: #d3e7ff;
+    // background: -moz-linear-gradient(top, hsl(213,100%,91%) 0%, hsl(0,100%,91%) 100%);
+    // background: -webkit-linear-gradient(top, hsl(213,100%,91%) 0%,hsl(0,100%,91%) 100%);
+    background: linear-gradient(to bottom, hsl(213,100%,91%) 0%,hsl(0,100%,91%) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3e7ff', endColorstr='#ffd1d1',GradientType=0 );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body {
+    font-family: 'Avenir';
+}
+
+#demo {
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+#title {
+    text-align: center;
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .exclamation {
+        //color: saturate(orange, 5%);
+        color: darken(orange, 5%);
+    }
+
+    .u_exclamation {
+        color: lighten(blue, 20%);   
+    }
+
+    // blocky
+    // font-family: 'Bree Serif', serif;
+
+    // campy
+    // font-family: 'Wendy One', sans-serif;
+
+    // thin and nice
+    // font-family: 'Domine', serif;
+
+    // font-family: 'Patua One', cursive;
+
+    font-family: 'Sansita One', cursive;
+
+    margin-bottom: 1rem;
+}
+
+#blurb {
+    text-align: center;
+
+    p {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    div {
+        margin: 0 auto;
+        width: 25em;
+    }
+}

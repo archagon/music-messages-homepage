@@ -1,0 +1,41 @@
+body {
+  background-color: #ccccff;
+  min-height: 800px; }
+  body * {
+    padding: 0;
+    margin: 0; }
+
+body {
+  background: #d3e7ff;
+  background: linear-gradient(to bottom, #d1e6ff 0%, #ffd1d1 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+body {
+  font-family: 'Avenir'; }
+
+#demo {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+#title {
+  text-align: center;
+  font-family: 'Sansita One', cursive;
+  margin-bottom: 1rem; }
+  #title h1 {
+    font-size: 3.5em; }
+  #title .exclamation {
+    color: #e69500; }
+  #title .u_exclamation {
+    color: #6666ff; }
+
+#blurb {
+  text-align: center; }
+  #blurb p {
+    width: 100%;
+    font-size: 1.4em; }
+  #blurb div {
+    margin: 0 auto;
+    width: 25em; }
+
+/*# sourceMappingURL=style.css.map */
