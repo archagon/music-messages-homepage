@@ -19,7 +19,7 @@ html, body {
 
 body {
   background: #fbd5b8;
-  background: linear-gradient(to bottom, #fbd5b8 0%, #f9b887 100%);
+  background: linear-gradient(to bottom, #fbd5b8 0%, #f69c57 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
@@ -48,7 +48,8 @@ body {
 
 #title {
   text-align: center;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  font-size: 0.9em; }
   #title .holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,5 +92,68 @@ body {
   margin-bottom: 5rem; }
   #badge img {
     width: 20em; }
+
+#features .features_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #features .features_list .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    width: 28em; }
+    @media not all and (max-width: 750px) {
+      #features .features_list .feature {
+        font-size: 1em; } }
+    @media all and (max-width: 750px) {
+      #features .features_list .feature {
+        font-size: 1.6em; } }
+    @media all and (max-width: 350px) {
+      #features .features_list .feature {
+        font-size: 1.6em; } }
+    #features .features_list .feature img {
+      margin-bottom: 1.4em;
+      border-radius: 1.1em;
+      width: 100% !important;
+      height: auto !important; }
+    #features .features_list .feature p {
+      font-size: 1.8em;
+      hyphens: auto;
+      -webkit-hyphens: auto; }
+      #features .features_list .feature p b {
+        hyphens: none;
+        -webkit-hyphens: none;
+        font-size: 1.1em; }
+
+#footer {
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #f9b887;
+  color: black; }
+  #footer ul li + li {
+    border-left: 1px solid #000000; }
+  #footer p {
+    font-size: 1em; }
 
 /*# sourceMappingURL=style.css.map */

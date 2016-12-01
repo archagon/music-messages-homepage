@@ -1,6 +1,33 @@
 $desktop-size: 750px;
 $mobile-size: 350px;
 
+@mixin child-margins($margin, $vertical: false) {
+    @if ($vertical) {
+        > * {
+            margin-top: $margin;
+            margin-bottom: $margin;
+        }
+        & :first-child {
+            margin-top: 0;
+        }
+        & :last-child {
+            margin-bottom: 0;
+        }
+    }
+    @else {
+        > * {
+            margin-left: $margin;
+            margin-right: $margin;
+        }
+        & :first-child {
+            margin-left: 0;
+        }
+        & :last-child {
+            margin-right: 0;
+        }
+    }
+}
+
 @mixin mobile {
     @if true {
         @media all and (max-width: $desktop-size) { 
@@ -56,7 +83,7 @@ body {
     background: lighten(#F47F26, 30%);
     // background: -moz-linear-gradient(top, hsl(213,100%,91%) 0%, hsl(0,100%,91%) 100%);
     // background: -webkit-linear-gradient(top, hsl(213,100%,91%) 0%,hsl(0,100%,91%) 100%);
-    background: linear-gradient(to bottom, lighten(#F47F26, 30%) 0%, lighten(#F47F26, 20%) 100%);
+    background: linear-gradient(to bottom, lighten(#F47F26, 30%) 0%, lighten(#F47F26, 10%) 100%);
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3e7ff', endColorstr='#ffd1d1',GradientType=0 );
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -130,6 +157,8 @@ body {
         justify-content: center;
     }
 
+    font-size: 0.9em;
+
     .title {
         font-family: 'Sansita One', sans-serif;
 
@@ -163,5 +192,103 @@ body {
 
     img {
         width: 20em;
+    }
+}
+
+#features {
+
+    .features_list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        // AB: no need, handled by features
+        //margin-bottom: 5rem;
+
+        .feature {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-bottom: 5rem;
+
+            @include desktop {
+                font-size: 1em;
+            }
+            @include mobile {
+                font-size: 1.6em;
+            }
+            @include tiny {
+                font-size: 1.6em;
+            }
+
+            width: 28em;
+
+            img {
+                margin-bottom: 1.4em;
+
+                border-radius: 1.1em;
+
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            p {
+                font-size: 1.8em;
+
+                b {
+                    hyphens: none;
+                    -webkit-hyphens: none;
+                    font-size: 1.1em;
+                }
+
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+        }
+    }
+}
+
+#footer {
+    position: relative;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    font-size: 1.8em;
+    text-align: center;
+
+    background-color: lighten(#F47F26, 20%);
+    color: black;
+
+    ul {
+        li+li { 
+            border-left: 1px solid #000000;
+        }
+    }
+
+    p {
+        font-size: 1em;
     }
 }
