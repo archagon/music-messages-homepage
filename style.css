@@ -73,7 +73,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   #title .title {
-    font-family: 'Sansita One', cursive;
+    font-family: 'Sansita One', sans-serif;
     font-size: 5.6em; }
     #title .title .exclamation {
       color: #e69500; }
@@ -90,6 +90,6 @@ body {
   margin-top: 5rem;
   margin-bottom: 5rem; }
   #badge img {
-    width: 25em; }
+    width: 20em; }
 
 /*# sourceMappingURL=style.css.map */
