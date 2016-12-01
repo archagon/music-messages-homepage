@@ -3,10 +3,10 @@
     font-size: 10px; } }
 @media all and (max-width: 750px) {
   html {
-    font-size: 7px; } }
+    font-size: 5px; } }
 @media all and (max-width: 350px) {
   html {
-    font-size: 5px; } }
+    font-size: 4px; } }
 html .image_demo {
   width: 32.0em; }
 
@@ -18,8 +18,8 @@ html, body {
   min-height: 100%; }
 
 body {
-  background: #d3e7ff;
-  background: linear-gradient(to bottom, #d1e6ff 0%, #ffd1d1 100%);
+  background: #fbd5b8;
+  background: linear-gradient(to bottom, #fbd5b8 0%, #f9b887 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
@@ -28,27 +28,68 @@ body {
 
 #demo {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem; }
+  margin-top: 5rem; }
+  #demo .demo_container {
+    display: inline-block;
+    width: 100em;
+    max-width: 100%; }
+
+.youtube_wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0; }
+  .youtube_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 #title {
   text-align: center;
-  font-family: 'Sansita One', cursive;
-  margin-bottom: 1rem; }
-  #title h1 {
-    font-size: 5.6em; }
-  #title .exclamation {
-    color: #e69500; }
-  #title .u_exclamation {
-    color: #6666ff; }
+  margin-top: 5rem; }
+  #title .holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #title .title_holder {
+    margin-left: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #title .title {
+    font-family: 'Sansita One', cursive;
+    font-size: 5.8em; }
+    #title .title .exclamation {
+      color: #e69500; }
+    #title .title .u_exclamation {
+      color: #6666ff; }
+  #title .blurb {
+    line-height: 1.2;
+    font-size: 3em; }
+  #title .icon {
+    width: 20em; }
 
-#blurb {
-  text-align: center; }
-  #blurb p {
-    width: 100%;
-    font-size: 2.2em; }
-  #blurb div {
-    margin: 0 auto;
-    width: 40em; }
+#badge {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  #badge img {
+    width: 25em; }
 
 /*# sourceMappingURL=style.css.map */
